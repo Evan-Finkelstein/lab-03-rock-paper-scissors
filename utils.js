@@ -1,8 +1,8 @@
 
-const resultSpan = document.querySelector('#result-span')
-const winSpan = document.querySelector('#wins-span')
-const drawSpan = document.querySelector('#draws-span')
-const lossSpan = document.querySelector('#losses-span')
+const resultSpan = document.querySelector('#result-span');
+const winSpan = document.querySelector('#wins-span');
+const drawSpan = document.querySelector('#draws-span');
+const lossSpan = document.querySelector('#losses-span');
 let wins = 0;
 let draws = 0;
 let losses = 0;
@@ -53,12 +53,12 @@ if(userThrow === 'scissors' && thrownValue === 'rock'){
 if(userThrow === 'rock' && thrownValue === 'scissors'){
     wins++;
     resultSpan.textContent= 'You win!';
-   winSpan.textContent = wins;
+    winSpan.textContent = wins;
 } 
 if(userThrow === 'paper' && thrownValue === 'rock'){
     wins++;
     resultSpan.textContent= 'You win!';
-   winSpan.textContent = wins;
+    winSpan.textContent = wins;
 } 
 if(userThrow === 'scissors' && thrownValue === 'paper'){
     wins++;
