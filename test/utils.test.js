@@ -12,7 +12,7 @@ test('should return rock paper or scissors', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = computersPick();
-    const options = ['rock', 'paper', 'scissors'];
+    
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.equal(typeof actual, 'string');
