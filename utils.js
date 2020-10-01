@@ -27,6 +27,7 @@ export function computersPick(){
 }
 
 export function rockPaperScissors(){
+
 const thrownValue = computersPick();
 const checkedRadioButton = document.querySelector(':checked');
 const userThrow = checkedRadioButton.value;
