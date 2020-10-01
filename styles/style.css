@@ -53,10 +53,13 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    font-size: 2em;
+    font-family: monospace;
+    margin-top: 15px;
 }
 
 footer {
@@ -104,6 +107,19 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+img{
+    height: 200px;
+    width: 200px;
+
+}
+input[type="radio"]:checked + img {
+    border: solid 5px green;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
   
   @keyframes pulse {
     20% {
