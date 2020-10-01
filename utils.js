@@ -3,10 +3,11 @@ const resultSpan = document.querySelector('#result-span');
 const winSpan = document.querySelector('#wins-span');
 const drawSpan = document.querySelector('#draws-span');
 const lossSpan = document.querySelector('#losses-span');
+const restartSpan = document.querySelector('#restart-span');
 let wins = 0;
 let draws = 0;
 let losses = 0;
-
+let restarts = 0;
 
 export function computersPick(){
     const randomNumber = Math.ceil(Math.random() * 3);
@@ -65,3 +66,13 @@ if(userThrow === 'scissors' && thrownValue === 'paper'){
     resultSpan.textContent= 'You win!';
     winSpan.textContent = wins;
 } }
+export function reset(){
+wins = 0;
+losses = 0;
+draws = 0;
+winSpan.textContent = 0;
+lossSpan.textContent = 0;
+drawSpan.textContent = 0;
+restarts++;
+restartSpan.textContent = restarts;
+}
