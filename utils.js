@@ -27,6 +27,7 @@ export function computersPick(){
 }
 
 export function rockPaperScissors(){
+
 const thrownValue = computersPick();
 const checkedRadioButton = document.querySelector(':checked');
 const userThrow = checkedRadioButton.value;
@@ -38,34 +39,36 @@ if(userThrow === thrownValue){
 } 
 if(userThrow === 'rock' && thrownValue === 'paper'){
     losses++;
-    resultSpan.textContent= 'You lose!';
+    resultSpan.textContent= 'Rock loses to scissors  : ( ';
     lossSpan.textContent = losses;
 } 
 if (userThrow === 'paper'  && thrownValue === 'scissors'){
     losses++;
-    resultSpan.textContent= 'You lose!';
+    resultSpan.textContent= 'Paper loses to rock  : (';
     lossSpan.textContent = losses;
 } 
 if(userThrow === 'scissors' && thrownValue === 'rock'){
     losses++;
-    resultSpan.textContent = 'You lose!';
+    resultSpan.textContent = 'Scissors lose to rock  : (';
     lossSpan.textContent = losses;
 } 
 if(userThrow === 'rock' && thrownValue === 'scissors'){
     wins++;
-    resultSpan.textContent= 'You win!';
+    resultSpan.textContent= 'Rock beats scissors!';
     winSpan.textContent = wins;
 } 
 if(userThrow === 'paper' && thrownValue === 'rock'){
     wins++;
-    resultSpan.textContent= 'You win!';
+    resultSpan.textContent= 'Paper beats rock!';
     winSpan.textContent = wins;
 } 
 if(userThrow === 'scissors' && thrownValue === 'paper'){
     wins++;
-    resultSpan.textContent= 'You win!';
+    resultSpan.textContent= 'Scissors beat paper!';
     winSpan.textContent = wins;
+
 } }
+
 export function reset(){
 wins = 0;
 losses = 0;
